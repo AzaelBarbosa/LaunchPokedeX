@@ -34,6 +34,7 @@ const fetchPokemon = () => {
             pokeType(type);
             console.log(pokeurl);
             fetchPokemon2(pokeurl);
+            PokeMoves(data);
         }
     });
 }
@@ -178,4 +179,17 @@ const pokeType = (type) => {
 
 
 
+}
+
+const PokeMoves = (data) => {
+    let moves = data.moves;
+    const pokemoves = document.getElementById("moves");
+    pokemoves.innerHTML = "";
+
+    for (let i = 0; i < moves.length; i++) {
+        const move = document.createElement("li");
+        pokemoves.appendChild(move);
+
+        move.innerText = moves[i].move.name;
+    }
 }

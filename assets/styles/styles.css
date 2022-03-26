@@ -265,15 +265,22 @@ body {
 }
 
 .datosInferior .otro {
-  width: 20%;
-  height: 50%;
+  padding: 30px;
+  width: 70%;
+  height: 70%;
   background-color: rgb(255, 211, 130);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  flex-flow: scroll;
+  justify-content: center;
+  align-items: center;
 }
+
+.datosInferior .otro .moves {
+    width: 90%;
+    height: 100%;
+    overflow-y: scroll;
+  }
 
 .datosInferior label {
   color: black;
@@ -311,4 +318,29 @@ body {
   width: 50%;
   height: 80px;
   box-shadow: 10px;
+}
+
+.type {
+    
+    background-color: rgb(255, 255, 255);
+    border-radius: 20%;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    margin: 5px;
+}
+
+
+footer {
+    margin-top:10px;
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(24, 24, 24);
+    height: 100px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    text-align: center;
 }
